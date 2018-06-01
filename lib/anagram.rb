@@ -1,17 +1,17 @@
 class Anagram
   attr_accessor :word
 
-  def initialize(word)
-    @word = word
+  def initialize(anagram)
+    @anagram = anagram
   end
 
-  def match(anagrams)
+  def match(array)
     result = [] #need to iterated over anagrams to see if any of the elements are composed of the same letters as word
-    new_anagrams = (%w(anagrams)).collect {|item| # iterating over anagrams and splitting each word into an array of characters.
+    new_array = (%w(array)).collect {|item| # iterating over anagrams and splitting each word into an array of characters.
       item.split("").sort}
-    new_anagrams. each do |item|
-      if item == word.split("").sort
-        result << word
+    new_array. each do |item|
+      if item == anagram.split("").sort
+        result << anagram
       else
         result
       end
