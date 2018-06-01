@@ -10,8 +10,8 @@ class Anagram
     new_array = (%w(array)).collect {|item| # iterating over anagrams and splitting each word into an array of characters.
       item.split("").sort}
     new_array. each do |item|
-      if item == anagram.split("").sort
-        result << anagram
+      if item == @anagram.split("").sort
+        result << @anagram
       else
         result
       end
