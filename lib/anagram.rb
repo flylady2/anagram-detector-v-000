@@ -13,6 +13,7 @@ class Anagram
       if item == @anagram.split("").sort
         result << array[index]
       end}
+      result
 
 
   end
