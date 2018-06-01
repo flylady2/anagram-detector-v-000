@@ -11,10 +11,8 @@ class Anagram
       item.split("").sort}
     new_array.each_with_index{|item, index|
       if item == @anagram.split("").sort
-        result << array[index]
+        result << array[index]}
       end
-    end
-    result
 
 
   end
